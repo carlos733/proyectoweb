@@ -1,0 +1,77 @@
+.encabezado {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 14px 28px;
+    background: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #262626;
+}
+
+.encabezado-marca {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    background: linear-gradient(135deg, #818cf8, #c084fc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.encabezado-nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.encabezado-nav form {
+    margin: 0;
+}
+
+.nav-enlace,
+.nav-boton {
+    padding: 8px 14px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    font-family: inherit;
+    color: #d4d4d8;
+    text-decoration: none;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.nav-enlace:hover,
+.nav-boton:hover {
+    color: #fff;
+    background: #1f1f23;
+}
+
+.nav-boton {
+    border-color: #303036;
+}
+
+.nav-enlace--destacado {
+    color: #fff;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+}
+
+.nav-enlace--destacado:hover {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    opacity: 0.9;
+}
+
+@media (max-width: 560px) {
+    .encabezado {
+        justify-content: center;
+        padding: 12px 16px;
+    }
+}
