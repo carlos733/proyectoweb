@@ -1,6 +1,6 @@
 'use server'
 
-import { createClient } from "../lib/supServer"
+import { createClient } from "./lib/supServer"
 import { redirect } from "next/navigation"
 import { revalidatePath } from "next/cache"
 

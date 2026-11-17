@@ -9,12 +9,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #f0f2f5;
+    background: black;
     font-family: Arial, sans-serif;
 }
 
 .login-form {
-    background: white;
+    background: rgba(10, 10, 10, 0.8);
     padding: 40px;
     width: 350px;
     border-radius: 12px;
@@ -78,3 +78,29 @@
     text-decoration: none;
     font-size: 14px;
 }
+
+/*---------*/
+
+.input-group select {
+    width: 100%;
+    padding: 12px;
+    background: #1a1a1a;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-group select:focus {
+    border-color: #4f8cff;
+}
+
+.input-group select option {
+    background: #1a1a1a;
+    color: #fff;
+}
+
+
+
+
