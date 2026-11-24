@@ -7,6 +7,7 @@ import Image from 'next/image';
 import './tarjetaproducto.css';
 import { eliminarProducto } from '../actions/productosAction';
 
+
 export default function TarjetaProducto({ producto }) {
     const [agregado, setAgregado] = useState(false);
     const [cargando, setCargando] = useState(false);
@@ -40,6 +41,7 @@ export default function TarjetaProducto({ producto }) {
     };
 
     return (
+        
         <article className="tarjeta">
             {producto.Imagen && (
                 <div className="imagen">
